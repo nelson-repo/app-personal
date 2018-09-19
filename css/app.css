@@ -1,0 +1,235 @@
+
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 40px;
+}
+.hover-underline-menu {
+  width: 100%;
+}
+
+.hover-underline-menu .menu {
+  background-color: #2C3840;
+}
+
+.hover-underline-menu .menu a {
+  color: #fefefe;
+  padding: 1.2rem 1.5rem;
+}
+
+.hover-underline-menu .menu .underline-from-center {
+  position: relative;
+}
+
+.hover-underline-menu .menu .underline-from-center::after {
+  content: "";
+  position: absolute;
+  top: calc(100% - 0.125rem);
+  border-bottom: 0.125rem solid #fefefe;
+  left: 50%;
+  right: 50%;
+  transition: all 0.5s ease;
+}
+
+.hover-underline-menu .menu .underline-from-center:hover::after {
+  left: 0;
+  right: 0;
+  transition: all 0.5s ease;
+}
+
+
+.clean-hero-slider .orbit-caption {
+  width: auto;
+  height: auto;
+  background: #0a0a0a;
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  padding: 0.2rem 2rem;
+}
+
+@media print, screen and (min-width: 40em) {
+  .clean-hero-slider .orbit-caption {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    text-align: left;
+    width: 70%;
+    right: 0;
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 75em) {
+  .clean-hero-slider .orbit-caption {
+    padding-right: 10%;
+  }
+}
+
+@media screen and (min-width: 90em) {
+  .clean-hero-slider .orbit-caption {
+    padding-right: 20%;
+  }
+}
+
+.clean-hero-slider .orbit-caption p {
+  font-size: 0.9rem;
+  line-height: 1.25;
+}
+
+@media print, screen and (min-width: 40em) {
+  .clean-hero-slider .orbit-caption p {
+    font-size: 1.1rem;
+  }
+}
+
+.clean-hero-slider .orbit-caption h3 {
+  color: #ffae00;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+@media print, screen and (min-width: 40em) {
+  .clean-hero-slider .orbit-caption h3 {
+    font-size: 2.5rem;
+    font-weight: normal;
+  }
+}
+
+.clean-hero-slider .orbit-slide {
+  padding-bottom: 40%;
+  background: #0a0a0a;
+}
+
+@media print, screen and (min-width: 40em) {
+  .clean-hero-slider .orbit-slide {
+    padding-bottom: 0;
+  }
+}
+
+.clean-hero-slider .orbit-controls button {
+  background: #ffae00;
+  padding: 1rem 0.5rem;
+}
+
+.clean-hero-slider .orbit-controls button:hover {
+  background: #fefefe;
+  color: #0a0a0a;
+}
+
+@media print, screen and (min-width: 40em) {
+  .clean-hero-slider .orbit-controls .orbit-previous {
+    left: auto;
+    right: 2.4rem;
+  }
+}
+
+@media print, screen and (min-width: 40em) {
+  .clean-hero-slider .orbit-controls .orbit-next {
+    right: 0.5rem;
+  }
+}
+
+.clean-hero-slider .orbit-bullets {
+  display: none;
+}
+
+@media print, screen and (min-width: 40em) {
+  .clean-hero-slider .orbit-bullets {
+    display: block;
+    margin-bottom: 0;
+    margin-top: -3rem;
+    background: none;
+  }
+}
+
+.clean-hero-slider .orbit-bullets button {
+  width: 3rem;
+  height: 0.4rem;
+  border-radius: 0;
+  background-color: #fefefe;
+}
+
+.clean-hero-slider .orbit-bullets button.is-active {
+  background-color: #ffae00;
+}
+
+.clean-hero-slider ul.orbit-container {
+  height: auto !important;
+}
+
+.clean-hero-slider li.orbit-slide {
+  max-height: none !important;
+}
+
+/* Footer */
+
+footer {
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  color: white;
+}
+
+.social-footer {
+  padding: 1rem;
+  background: #2C3840;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.social-footer .social-footer-icons li:last-of-type {
+  margin-right: 0;
+}
+
+.social-footer .social-footer-icons .fab {
+  font-size: 1.3rem;
+  color: #fefefe;
+}
+
+.social-footer .social-footer-icons .fa:hover {
+  color: #2C3840;
+  transition: color 0.3s ease-in;
+}
+
+/* Contacto */
+
+
+form .form-icons {
+  text-align: center;
+}
+
+form .form-icons h4 {
+  margin-bottom: 1rem;
+}
+
+form .form-icons .input-group-label {
+  background-color: #1779ba;
+  border-color: #1779ba;
+}
+
+form .form-icons .input-group-field {
+  border-color: #1779ba;
+}
+
+form .form-icons .fa {
+  color: white;
+  width: 1rem;
+}
